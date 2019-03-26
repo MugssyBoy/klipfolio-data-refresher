@@ -1,0 +1,396 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fun",
+				"function"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"cent",
+				"align-content\tproperty"
+			],
+			[
+				"bord",
+				"border-style\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"co",
+				"config"
+			],
+			[
+				"pas",
+				"passport"
+			],
+			[
+				"user",
+				"user_model"
+			],
+			[
+				"ex",
+				"express"
+			],
+			[
+				"body",
+				"bodyParser"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/package.json",
+			"settings":
+			{
+				"buffer_size": 299,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/app.js",
+			"settings":
+			{
+				"buffer_size": 606,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app.js",
+			"settings":
+			{
+				"buffer_size": 1492,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/subl",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis"
+	],
+	"file_history":
+	[
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/exe_nightmarejs/package.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/exe_nightmarejs/.gitignore",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/exe_nightmarejs/app.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/exe_nightmarejs/.env",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-nodeschedule/.gitignore",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-ejs/.gitignore",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/mw-cloned2/.gitignore",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/mw-cloned2/one-time/BerneApparelMW_03-13-19.csv",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/mw-cloned2/download.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-nodeschedule/views/pages/index.ejs",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-nodeschedule/server.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-nodeschedule/app.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-nodeschedule/.env",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-nodeschedule/package.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-nodeschedule/views/partials/header.ejs",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-ejs/server.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-ejs/views/partials/header.ejs",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-nodeschedule/views/partials/head.ejs",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-ejs/views/partials/head.ejs",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/routes/api_route.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-ejs/views/pages/index.ejs",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/subl/unlock-awesomeness.sublime-project",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-ejs/views/pages/about.ejs",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-ejs/views/partials/footer.ejs",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn-ejs/package.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/server.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/nohope-system/server.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/nohope-system/config/config.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/nohope-system/public/signup.html",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/nohope-system/public/members.html",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/nohope-system/public/login.html",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/nohope-system/models/user.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/nohope-system/.gitignore",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/.gitignore",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/.env",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/public/js/signup.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/config/config.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/models/user_model.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/config/middleware/isAuthenticated.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/config/passport.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/routes/html_route.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/package.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/account-authentication/production/package.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/node-best-practices-sample/node_modules/eslint/lib/rules/rest-spread-spacing.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/account-authentication/production/models/user.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/public/login.html",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/public/js/members.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/public/members.html",
+		"/D/Gemota, Jomael/PROGRAMMING/JS/NODE.JS/Tasks/Wilfred Scrapers/Asics/AsicsScraper.php",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/application/models/user-model.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/account-authentication/production/public/login.html",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/login-register/server.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/login-register/routes/user_route.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/login-register/models/user_model.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/login-register/database/db.js",
+		"/C/Users/Jomael Gemota/Downloads/btcostconnect.js",
+		"/C/Users/Jomael Gemota/Downloads/btcost.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Linnworks/importing/amazon inventory exports/Active+Listings+Report+03-05-2019.txt",
+		"/C/Users/Jomael Gemota/Downloads/btcostconnect"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 606,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								524,
+								524
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								753,
+								753
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 258.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "exe_nightmarejs.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 329.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

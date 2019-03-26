@@ -1,0 +1,16 @@
+{
+  "name": "exe_nightmarejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Jomael Gemota",
+  "license": "MIT",
+  "dependencies": {
+    "nightmare": "^3.0.1",
+    "vo": "^4.0.2"
+  }
+}
