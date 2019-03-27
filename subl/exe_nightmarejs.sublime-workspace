@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ref",
+				"refreshInterval"
+			],
+			[
 				"fun",
 				"function"
 			],
@@ -60,30 +64,30 @@
 	"buffers":
 	[
 		{
-			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/package.json",
+			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/app.js",
 			"settings":
 			{
-				"buffer_size": 299,
+				"buffer_size": 695,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/node_modules/nightmare/test/index.js",
+			"settings":
+			{
+				"buffer_size": 77314,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/app.js",
+			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/package.json",
 			"settings":
 			{
-				"buffer_size": 606,
+				"buffer_size": 289,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app.js",
-			"settings":
-			{
-				"buffer_size": 1492,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -120,12 +124,23 @@
 	"expanded_folders":
 	[
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/node_modules",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/subl",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis"
 	],
 	"file_history":
 	[
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app_4.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/.gitignore",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/package.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app_3.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app_2.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/app.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/package.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app_3",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/exe_nightmarejs/package.json",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/exe_nightmarejs/.gitignore",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/exe_nightmarejs/app.js",
@@ -188,7 +203,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -219,52 +234,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/package.json",
+					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 299,
+						"buffer_size": 695,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								192,
-								192
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 606,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								524,
-								524
+								475,
+								475
 							]
 						],
 						"settings":
@@ -275,24 +262,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app.js",
-					"semi_transient": false,
+					"buffer": 1,
+					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/node_modules/nightmare/test/index.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1492,
+						"buffer_size": 77314,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								753,
-								753
+								0,
+								0
 							]
 						],
 						"settings":
@@ -302,10 +289,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 258.4,
+						"translation.y": 4596.8,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -313,7 +330,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -350,7 +367,7 @@
 	"project": "exe_nightmarejs.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
