@@ -1,7 +1,7 @@
 {
-  "name": "klipfolio_refresher",
+  "name": "klipfolio-data-refresher",
   "version": "1.0.0",
-  "description": "",
+  "description": "Klipfolio data refresher.",
   "main": "app.js",
   "scripts": {
     "test": "test",
@@ -10,9 +10,8 @@
   "author": "Jomael Gemota",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^7.0.0",
+    "ckey": "^1.0.2",
     "exceljs": "^1.7.0",
-    "nightmare": "^3.0.0",
-    "osmosis": "^1.1.10"
+    "nightmare": "^3.0.0"
   }
 }
