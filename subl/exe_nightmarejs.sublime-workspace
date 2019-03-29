@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"klip",
+				"klipDetails"
+			],
+			[
+				"data",
+				"dataSourcesIDs"
+			],
+			[
+				"sh",
+				"shIDs"
+			],
+			[
+				"get",
+				"getDataSourceInfo"
+			],
+			[
+				"da",
+				"dataSourceId"
+			],
+			[
+				"log",
+				"logStuff"
+			],
+			[
 				"ref",
 				"refreshInterval"
 			],
@@ -67,27 +91,27 @@
 			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/app.js",
 			"settings":
 			{
-				"buffer_size": 695,
+				"buffer_size": 1808,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/node_modules/nightmare/test/index.js",
+			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/klip_data/klip_details.js",
 			"settings":
 			{
-				"buffer_size": 77314,
+				"buffer_size": 108,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/package.json",
+			"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/.env",
 			"settings":
 			{
-				"buffer_size": 289,
+				"buffer_size": 41,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -125,13 +149,19 @@
 	[
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher",
-		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/node_modules",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/data_sources",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/klip_data",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/subl",
-		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs",
-		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_osmosis"
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn_callback",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn_nightmarejs"
 	],
 	"file_history":
 	[
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/package.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn_callback/package.json",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Unlock Awesomeness/unlock-awesomeness/learn_callback/app.js",
+		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Parsers/parsers/landau/app.js",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/app_4.js",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/.gitignore",
 		"/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/test_nightmarejs/package.json",
@@ -203,7 +233,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -217,6 +247,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"selector"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -243,15 +274,43 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 695,
+						"buffer_size": 1808,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								475,
-								475
+								673,
+								673
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 144.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/klip_data/klip_details.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
 							]
 						],
 						"settings":
@@ -262,67 +321,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/node_modules/nightmare/test/index.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 77314,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4596.8,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/package.json",
+					"file": "/D/Gemota, Jomael/PROGRAMMING/PROJECTS/Scrapers/scrapers/klipfolio_refresher/.env",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 289,
+						"buffer_size": 41,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								282,
-								282
+								31,
+								31
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

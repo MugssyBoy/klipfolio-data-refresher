@@ -2,7 +2,10 @@ const osmosis = require('osmosis');
 const Excel = require('exceljs');
 
 const Nightmare = require('nightmare');
-const nightmare = Nightmare({ show: true, waitTimeout: 60000 })
+
+const nightmare = Nightmare({
+	show: true, waitTimeout: 60000
+})
 
 const wbDataSourceID = new Excel.Workbook();
 const flDataSourceID = './data_sources/dataSourcesID.xlsx';
@@ -14,28 +17,35 @@ require('dotenv').config();
 function crawlKlip(mainUrl, dataSourceId, refSelector) {
 	nightmare
 		.viewport(1024, 700)
-		.goto(mainUrl + dataSourceId)
+		.goto(klipDetails.dnsKlip)
 		.wait('#f-username')
 		.type('#f-username', process.env.UN)
 		.type('#f-password', process.env.PD)
 		.click('#login')
-		.wait('#refreshLink')
-		.click('#refreshLink')
-		.wait(10)
-		.evaluate(refSelector => {
-			return document.querySelector(refSelector).innerText
-		}, refSelector)
+		.wait('#tb-tab-add_klip')
 		// .end()
-		.then(result => {
-			console.log(dataSourceId + ": " + result);
+		.then(function() {
+			dataSourceId.forEach(function(dsId) {
+				nightmare
+					.goto(mainUrl + dsId)
+					.wait('#refreshLink')
+					.click('#refreshLink')
+					.wait(50)
+					.then(function() {
+						console.log(mainUrl + dsId);
+					})
+					.catch(function(err) {
+						console.log("Issue 2: " + err + "-" + dsId);
+					})
+			})
 		})
 		.catch(function(err) {
-			console.log("Issue: " + err);
+			console.log("Issue 1: " + err);
 		})
 }
 
-function getDataSourceInfo(mainUrl, dataSourceId, refSelector, crawlKlip) {
-	crawlKlip(mainUrl, dataSourceId, refSelector);	
+function getDataSourceInfo(mainUrl, dataSourceId, refSelector, callback) {
+	callback(mainUrl, dataSourceId, refSelector);
 }
 
 function dataSourcesIDs() {
@@ -47,25 +57,16 @@ function dataSourcesIDs() {
 			shIDs.eachRow({ includeEmpty: false }, function(row, rowNumber) {
 				arrDataSourceIDs.push(row.values[1]);
 			});
-			loopDSIds(arrDataSourceIDs);
+			getDataSourceInfo(
+				klipDetails.mainUrl,
+				arrDataSourceIDs,
+				klipDetails.refSelector,
+				crawlKlip
+			);
 		})
 		.catch(function(err) {
 			console.log("Error: " + err);
 		})
 };
-
-function loopDSIds(arrDataSourceIDs) {
-	// console.log(arrDataSourceIDs);
-	for (let i = 0; i < arrDataSourceIDs.length; i++) {
-		getDataSourceInfo(
-			klipDetails.mainUrl,
-			arrDataSourceIDs[i],
-			klipDetails.refSelector,
-			crawlKlip
-		);
-		console.log(arrDataSourceIDs[i]);
-	}
-	// console.log("Data Sources Refreshing: Complete");
-}
 
 dataSourcesIDs();
