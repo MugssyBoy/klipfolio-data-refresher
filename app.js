@@ -40,7 +40,7 @@ function crawlKlip(mainUrl, dataSourceId, refSelector) {
 			})
 		})
 		.catch(function(err) {
-			console.log("Issue 1: " + err);
+			console.log(`Issue 1: ${err}`);
 		})
 }
 

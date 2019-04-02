@@ -63,3 +63,4 @@ typings/
 # sequelize
 #-config/
 #-models/
+.DS_Store
