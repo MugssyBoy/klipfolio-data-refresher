@@ -64,3 +64,6 @@ typings/
 #-config/
 #-models/
 .DS_Store
+
+#sublime
+subl/

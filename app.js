@@ -1,72 +1,83 @@
-const osmosis = require('osmosis');
-const Excel = require('exceljs');
-
 const Nightmare = require('nightmare');
+const key = require('ckey');
+const moment = require('moment');
+const momentRange = require('moment-range');
+const dateTimeConverter = require('datetime-converter-nodejs');
+const os = require('os');
 
-const nightmare = Nightmare({
-	show: true, waitTimeout: 60000
-})
+momentRange.extendMoment(moment);
 
-const wbDataSourceID = new Excel.Workbook();
-const flDataSourceID = './data_sources/dataSourcesID.xlsx';
+const options = { show: true, waitTimeout: 120000, typeInterval: 25 };
+const klipfolio = Nightmare(options);
+const osHostname = os.hostname();
 
-let klipDetails = require('./klip_data/klip_details.js');
-
-require('dotenv').config();
-
-function crawlKlip(mainUrl, dataSourceId, refSelector) {
-	nightmare
+function loginKlipfolio (callback) {
+	console.log(`${osHostname}: Logging in Klipfolio...`);
+	klipfolio.goto("https://app.klipfolio.com/")
 		.viewport(1024, 700)
-		.goto(klipDetails.dnsKlip)
 		.wait('#f-username')
-		.type('#f-username', process.env.UN)
-		.type('#f-password', process.env.PD)
+		.type('#f-username', key.KLIPFOLIO_USERNAME)
+		.type('#f-password', key.KLIPFOLIO_PASSWORD)
 		.click('#login')
 		.wait('#tb-tab-add_klip')
-		// .end()
-		.then(function() {
-			dataSourceId.forEach(function(dsId) {
-				nightmare
-					.goto(mainUrl + dsId)
-					.wait('#refreshLink')
-					.click('#refreshLink')
-					.wait(50)
-					.then(function() {
-						console.log(mainUrl + dsId);
-					})
-					.catch(function(err) {
-						console.log("Issue 2: " + err + "-" + dsId);
-					})
-			})
+		.then(() => {
+			console.log(`${osHostname}: Logged In Successfully!`);
+			callback();
 		})
-		.catch(function(err) {
-			console.log(`Issue 1: ${err}`);
-		})
+		.catch(() => console.log(`${osHostname}: Failed to Login Klipfolio`))
 }
 
-function getDataSourceInfo(mainUrl, dataSourceId, refSelector, callback) {
-	callback(mainUrl, dataSourceId, refSelector);
+function proceedToDataRefresher () {
+	const dataSourceIds = require('./klip_data/datasource_ids.json').dataSourceIdList;
+	dataSourceLooper(dataSourceIds, 0);
 }
 
-function dataSourcesIDs() {
-	wbDataSourceID.xlsx.readFile(flDataSourceID)
-		.then(function() {
-			let arrDataSourceIDs = [];
-			let shIDs = wbDataSourceID.getWorksheet('IDs');
+function dataSourceLooper (dataSourceIds, index) {
+	let currentDataSourceId = dataSourceIds[index];
 
-			shIDs.eachRow({ includeEmpty: false }, function(row, rowNumber) {
-				arrDataSourceIDs.push(row.values[1]);
-			});
-			getDataSourceInfo(
-				klipDetails.mainUrl,
-				arrDataSourceIDs,
-				klipDetails.refSelector,
-				crawlKlip
-			);
-		})
-		.catch(function(err) {
-			console.log("Error: " + err);
-		})
-};
+	if (index < dataSourceIds.length) {
+		dataSourceRefresher(currentDataSourceId, () => {
+			index++;
+			dataSourceLooper(dataSourceIds, index);
+		}, index)
+	} else console.log(`${osHostname}: Data Sources Refresh Completed!`);
+}
 
-dataSourcesIDs();
+function dataSourceRefresher (currentDataSourceId, callback, index) {
+	const lastRefreshDate = require('./klip_data/datasource_ids.json').lastRefreshDate;
+	console.log(`Processing: [${index + 1}] ${currentDataSourceId}`);
+
+	klipfolio.goto(`https://app.klipfolio.com/datasources/view/${currentDataSourceId}`)
+	    .wait('#refreshLink')
+	    .click('#refreshLink')
+	    .wait(50000)
+	    .evaluate(lastRefreshDate => {
+	    	return document.querySelector(lastRefreshDate).innerText;
+	    }, lastRefreshDate)
+	    .then(resultLastRefreshDate => {
+	    	checkLastRefreshDate(resultLastRefreshDate, index, callback);
+	    })
+	    .catch((err) => console.log(`Failed to Refresh: ${currentDataSourceId} ${err}`))
+}
+
+function checkLastRefreshDate (resultLastRefreshDate, index, callback) {
+	let currentDateTime = dateTimeConverter.isoString(moment().seconds(0).milliseconds(0).format());
+	let currentDateTimeRange = moment.range(moment(currentDateTime).add(-2, 'minutes'), currentDateTime, null, []);
+
+	let formattedCurrDateTime = moment(currentDateTime).format('MMM D, YYYY h:mm A');
+
+	if (moment(dateTimeConverter.isoString(resultLastRefreshDate)).within(currentDateTimeRange)) {
+		console.log(
+			`Success: [${index + 1}]; Date Refreshed: [${resultLastRefreshDate}]; Date Ranged: [${currentDateTimeRange}]`
+		);
+		callback();
+	} else {
+		console.log(
+			`Failed: [${index + 1}] Date Processed: [${formattedCurrDateTime}] => Last Date Refreshed: [${resultLastRefreshDate}] Date Ranged: [${currentDateTimeRange}]`
+		);
+		callback();
+	}
+}
+
+
+loginKlipfolio(proceedToDataRefresher);
