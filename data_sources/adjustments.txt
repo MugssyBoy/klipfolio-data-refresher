@@ -1,0 +1,11 @@
+Error Handling
+- No 'Queue Refresh' button: Done
+- Failed to Refresh: Done
+- Fail Items log: Done
+- Time Elapsed Count: Done [logs]
+- Scheduling
+ * Ideal Start Time: 01:00PM until 08:00PM => 7hrs total
+ * test-01: 09:04PM until 03:52AM => 7hrs total
+ * test-02: 
+- Failed to Login
+- Closing instance after running all ids

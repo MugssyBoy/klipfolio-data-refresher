@@ -4,7 +4,9 @@ const Excel = require('exceljs');
 const Nightmare = require('nightmare');
 
 const nightmare = Nightmare({
-	show: true, waitTimeout: 60000
+	show: true,
+	waitTimeout: 60000,
+	pollInterval: 10
 })
 
 const wbDataSourceID = new Excel.Workbook();
@@ -30,7 +32,7 @@ function crawlKlip(mainUrl, dataSourceId, refSelector) {
 					.goto(mainUrl + dsId)
 					.wait('#refreshLink')
 					.click('#refreshLink')
-					.wait(50)
+					.wait(10)
 					.then(function() {
 						console.log(mainUrl + dsId);
 					})
@@ -40,7 +42,7 @@ function crawlKlip(mainUrl, dataSourceId, refSelector) {
 			})
 		})
 		.catch(function(err) {
-			console.log(`Issue 1: ${err}`);
+			console.log("Issue 1: " + err);
 		})
 }
 

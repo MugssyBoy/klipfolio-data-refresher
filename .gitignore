@@ -63,7 +63,9 @@ typings/
 # sequelize
 #-config/
 #-models/
-.DS_Store
 
-#sublime
+# sublime
 subl/
+
+# klipfolio history logs
+logs/

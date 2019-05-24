@@ -1,0 +1,7 @@
+{
+	"lastRefreshDate": "#admin-pane > div.admin-pane-inner > table > tbody > tr > td.admin-content-column > div > div:nth-child(1) > div.admin-section-content > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > span",
+	"klipfolioBrandList": [
+		"adidas"
+	],
+	"klipfolioIndexPage": "https://app.klipfolio.com/datasources/index"
+}
