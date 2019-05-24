@@ -69,3 +69,5 @@ subl/
 
 # klipfolio history logs
 logs/
+
+.DS_Store
